@@ -22,11 +22,17 @@
             <div>
                 <label for="firstname">Your First Name<span class="required-field">*</span></label>
                 <!-- could not get minlenght or maxlength to work; used pattern instead-->
-                <input pattern="[A-Za-z]{2,35}" title="between 2 and 35 letters" required id="firstname" name="firstname">
+                <input pattern="[A-Za-z]{2,35}" title="between 2 and 35 letters" required id="firstname"
+                    name="firstname">
 
 
                 <label for="lastname">Your Last Name<span class="required-field">*</span></label>
                 <input pattern="[A-Za-z]{2,35}" title="between 2 and 35 letters" required id="lastname" name="lastname">
+
+                <label for="age">Your Age</label>
+                <input type="number" name="age" id="age" min="21" max="120">
+                <h5>must be 21 to win</h5>
+
 
             </div>
             <!-- <fieldset> and <legend> are used to create a seperate container for like information-->
@@ -97,7 +103,7 @@
                     <option value="WY">Wyoming</option>
                 </select>
                 <label for="zipcode">Your Zip Code</label>
-                <input type="text" id="zipcode" name="zipcode">
+                <input pattern="[0-9]{5}" title="5 digit zipcode" id="zipcode" name="zipcode" >
             </fieldset>
 
             <!-- below is an example of radio buttons-->
