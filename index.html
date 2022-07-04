@@ -9,17 +9,18 @@
 </head>
 
 <body>
+    <!-- <nav> used to create a header in the traditional navigation bar space-->
     <nav>
         Enter the Contest for the Vacation of a Lifetime
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <!-- TODO: Set Action and Method Properties -->
+        <!-- Form start -->
         <form method="GET" action="results.html">
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
-                <!-- TODO: Create a "lastname" input with type "text" -->
+
                 <label for="lastname">Your Last Name</label>
                 <input type="text" id="lastname" name="lastname">
             </div>
@@ -35,8 +36,8 @@
                 <label for="city">Your City</label>
                 <input type="text" id="city" name="city">
                 <!-- below is a dropdown.  instead of <input> the <select> tag is used-->
-                <label for="state">Your State</label>                
-                <select name="state"> 
+                <label for="state">Your State</label>
+                <select name="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -90,37 +91,61 @@
                 <label for="zipcode">Your Zip Code</label>
                 <input type="text" id="zipcode" name="zipcode">
             </fieldset>
-            
+
             <!-- below is an example of radio buttons-->
             <fieldset>
                 <legend>Your Preferences</legend>
                 <h3>Choose your location</h3>
                 <div>
-                    <input type="radio" id="aruba" name="location" value="Aruba" checked> 
+                    <input type="radio" id="aruba" name="location" value="Aruba" checked>
                     <label for="aruba">Aruba</label>
                 </div>
                 <div>
-                    <input type="radio" id="japan" name="location" value="Japan"> 
+                    <input type="radio" id="japan" name="location" value="Japan">
                     <label for="japan">Japan</label>
                 </div>
                 <div>
-                    <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
+                    <input type="radio" id="reykjavik" name="location" value="Reykjavik">
                     <label for="reykjavik">Reykjavik</label>
                 </div>
                 <div>
-                    <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
+                    <input type="radio" id="new-zealand" name="location" value="New Zealand">
                     <label for="new-zealand">New Zealand</label>
                 </div>
             </fieldset>
             <label for="color">Favorite Color</label>
             <input type="color" id="color" name="color">
 
-            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
 
-            <!-- TODO: Submit Button -->
+            <!-- TODO: Checkboxes for selecting extra add-ons -->
+            <!--Below is a checkbox example-->
+
+            <div>
+                <fieldset>
+                    <legend>Extras</legend>
+                    <h3>Check any that you may want</h3>
+
+                    <div>
+                        In Room Deep Fryer:
+                        <input type="checkbox" value="in room deep fryer" name="extras">
+                    </div>
+
+                    <div>
+                        Square Dancing:
+                        <input type="checkbox" value="square dancing" name="extras">
+                    </div
+                    >
+                    <div>
+                        Personal Farrier:
+                        <input type="checkbox" value="personal farrier" name="extras">
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <!--Submit Button -->
+<input type="submit">
+
         </form>
     </main>
     <footer>
